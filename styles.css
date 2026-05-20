@@ -13,12 +13,12 @@ body{
 /* HERO */
 
 .hero{
-    min-height:100vh;
+    min-height:65vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:60px 20px;
+    padding:60px 20px 40px;
 }
 
 .hero-content{
@@ -67,7 +67,7 @@ body{
 .about{
     max-width:1000px;
     margin:auto;
-    padding:120px 25px 100px 25px;
+    padding:60px 25px 80px;
 }
 
 .about h2{
@@ -87,8 +87,8 @@ body{
 @media (max-width:768px){
 
 .hero{
-    min-height:90vh;
-    padding:80px 25px;
+    min-height:85vh;
+    padding:70px 25px 40px;
 }
 
 .hero h1{
@@ -112,7 +112,7 @@ body{
 }
 
 .about{
-    padding:90px 25px;
+    padding:70px 25px;
 }
 
 .about h2{
