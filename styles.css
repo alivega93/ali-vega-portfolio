@@ -6,19 +6,19 @@
 
 body{
     font-family:Arial, sans-serif;
-    background:#0f172a;
+    background:#0b1026;
     color:white;
 }
 
-.hero{
-    min-height:100vh;
+/* HERO */
 
+.hero{
+    min-height:80vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-
-    padding:40px;
+    padding:40px 20px;
 }
 
 .hero-content{
@@ -27,74 +27,101 @@ body{
 
 .hero h1{
     font-size:3rem;
-    color:#60a5fa;
-
+    color:#7aa8ff;
     margin-bottom:20px;
 }
 
 .hero h2{
-    font-size:1.8rem;
-
+    font-size:2rem;
     margin-bottom:25px;
-
-    color:#cbd5e1;
 }
 
 .hero p{
     font-size:1.1rem;
-
+    color:#cfcfcf;
+    max-width:700px;
+    margin:20px auto 35px auto;
     line-height:1.8;
-
-    color:#94a3b8;
-
-    margin-bottom:35px;
 }
 
+/* BUTTON */
+
 .btn{
-
     display:inline-block;
-
     text-decoration:none;
-
-    background:#2563eb;
-
+    background:#3b82f6;
     color:white;
-
     padding:15px 35px;
-
     border-radius:12px;
-
     transition:0.3s;
 }
 
 .btn:hover{
-
-    background:#3b82f6;
-
+    background:#2563eb;
     transform:translateY(-3px);
-
 }
+
+/* ABOUT */
 
 .about{
-padding:100px 20px;
+    padding:70px 20px;
+    max-width:1000px;
+    margin:auto;
 }
+
+.about h2{
+    font-size:2.5rem;
+    margin-bottom:25px;
+}
+
+.about p{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#d4d4d4;
+}
+
+/* PROJECTS */
+
+.projects{
+    padding:70px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.projects h2{
+    font-size:2.5rem;
+    margin-bottom:25px;
+}
+
+.projects p{
+    font-size:1.1rem;
+    color:#d4d4d4;
+}
+
+/* MOBILE */
 
 @media (max-width:768px){
 
+.hero{
+    min-height:70vh;
+    padding:30px 20px;
+}
+
 .hero h1{
-    font-size:2.7rem;
+    font-size:2.6rem;
 }
 
 .hero h2{
-    font-size:2rem;
+    font-size:1.7rem;
 }
 
 .hero p{
-    font-size:1.1rem;
+    font-size:1.05rem;
 }
 
-.about{
-    padding:80px 20px;
+.about h2,
+.projects h2{
+    font-size:2rem;
 }
 
 }
