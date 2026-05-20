@@ -5,29 +5,30 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#0b1026;
+    font-family:Arial,sans-serif;
+    background:#081126;
     color:white;
 }
 
 /* HERO */
 
 .hero{
-    min-height:80vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:40px 20px;
+    padding:60px 20px;
 }
 
 .hero-content{
     max-width:900px;
+    width:100%;
 }
 
 .hero h1{
-    font-size:3rem;
-    color:#7aa8ff;
+    color:#6ea3ff;
+    font-size:4rem;
     margin-bottom:20px;
 }
 
@@ -37,10 +38,10 @@ body{
 }
 
 .hero p{
-    font-size:1.1rem;
-    color:#cfcfcf;
+    font-size:1.15rem;
+    color:#c7c7c7;
     max-width:700px;
-    margin:20px auto 35px auto;
+    margin:auto;
     line-height:1.8;
 }
 
@@ -48,53 +49,36 @@ body{
 
 .btn{
     display:inline-block;
+    margin-top:35px;
     text-decoration:none;
-    background:#3b82f6;
+    background:#356dff;
     color:white;
-    padding:15px 35px;
-    border-radius:12px;
-    transition:0.3s;
+    padding:18px 42px;
+    border-radius:14px;
+    transition:.3s;
 }
 
 .btn:hover{
-    background:#2563eb;
-    transform:translateY(-3px);
+    background:#2458e8;
 }
 
 /* ABOUT */
 
 .about{
-    padding:70px 20px;
     max-width:1000px;
     margin:auto;
+    padding:120px 25px 100px 25px;
 }
 
 .about h2{
-    font-size:2.5rem;
-    margin-bottom:25px;
+    font-size:3rem;
+    margin-bottom:30px;
+    color:#ffffff;
 }
 
 .about p{
-    font-size:1.1rem;
-    line-height:1.8;
-    color:#d4d4d4;
-}
-
-/* PROJECTS */
-
-.projects{
-    padding:70px 20px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.projects h2{
-    font-size:2.5rem;
-    margin-bottom:25px;
-}
-
-.projects p{
-    font-size:1.1rem;
+    font-size:1.2rem;
+    line-height:2;
     color:#d4d4d4;
 }
 
@@ -103,25 +87,40 @@ body{
 @media (max-width:768px){
 
 .hero{
-    min-height:70vh;
-    padding:30px 20px;
+    min-height:90vh;
+    padding:80px 25px;
 }
 
 .hero h1{
-    font-size:2.6rem;
+    font-size:4rem;
 }
 
 .hero h2{
-    font-size:1.7rem;
+    font-size:1.9rem;
+    line-height:1.4;
 }
 
 .hero p{
-    font-size:1.05rem;
+    font-size:1.25rem;
+    line-height:1.9;
 }
 
-.about h2,
-.projects h2{
-    font-size:2rem;
+.btn{
+    width:100%;
+    max-width:330px;
+    font-size:1.2rem;
+}
+
+.about{
+    padding:90px 25px;
+}
+
+.about h2{
+    font-size:2.5rem;
+}
+
+.about p{
+    font-size:1.25rem;
 }
 
 }
