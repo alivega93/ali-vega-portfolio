@@ -3,85 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ali Vega Portfolio</title>
-
+    <title>Ali Vega | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <section class="hero">
-
+    <header class="hero">
         <div class="hero-content">
+            <p class="tag">Data Analyst Portfolio</p>
 
             <h1>Ali Vega</h1>
 
             <h2>Data Analyst | Python | SQL | Cloud & Big Data</h2>
 
             <p>
-                Data analyst transitioning into tech with experience in
-                Python, SQL, Machine Learning, Cloud Computing and
-                Business Analytics.
+                Data analyst transitioning into tech with experience in Python, SQL,
+                Machine Learning, Cloud Computing and Business Analytics.
             </p>
 
-            <a href="#projects" class="btn">
-                View Projects
-            </a>
-
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
         </div>
+    </header>
 
-    </section>
-    
-    <section class="about">
+    <main>
 
-<h2>About Me</h2>
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>
+                I am a Data Analyst transitioning into tech with a background in
+                Psychopedagogy and hands-on experience in Python, SQL, data visualization,
+                machine learning, cloud computing and business analytics.
+            </p>
+            <p>
+                I enjoy transforming data into clear insights, building analytical projects
+                and creating solutions that support strategic and data-driven decisions.
+            </p>
+        </section>
 
-<p>
-Data Analyst transitioning into tech with experience in Python, SQL,
-Machine Learning, Cloud Computing and Business Analytics.
-Passionate about transforming data into strategic insights and
-business decisions.
-</p>
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
 
-</section>
-<section id="projects" class="projects">
+            <div class="skills-grid">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Machine Learning</span>
+                <span>PySpark</span>
+                <span>Looker Studio</span>
+                <span>Power BI / BI Reporting</span>
+                <span>Cloud Computing</span>
+                <span>AWS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Git & GitHub</span>
+            </div>
+        </section>
 
-<h2>Projects</h2>
+        <section id="projects" class="section projects">
+            <h2>Projects</h2>
 
-<div class="project-card">
-<h3>Vehicular Crime Risk Analytics in Mexico</h3>
-<p>Risk classification, predictive modeling and dashboard analytics using Python, SQL Server and Looker Studio.</p>
-</div>
+            <div class="projects-grid">
 
-<div class="project-card">
-<h3>Big Data Analytics with PySpark</h3>
-<p>Large-scale data processing, Spark DataFrames, partitioning and analytics using PySpark.</p>
-</div>
+                <article class="project-card">
+                    <h3>Vehicular Crime Risk Analytics in Mexico</h3>
+                    <p>
+                        End-to-end analytics project focused on vehicular crime risk
+                        classification, predictive modeling and dashboard analytics.
+                    </p>
+                    <p class="tech">Python • SQL Server • Scikit-Learn • Looker Studio</p>
+                    <a href="https://github.com/alivega93" target="_blank">View Project</a>
+                </article>
 
-<div class="project-card">
-<h3>Cloud Analytics & Data Lake</h3>
-<p>Cloud storage architecture, data lake setup and analytics workflow implementation.</p>
-</div>
+                <article class="project-card">
+                    <h3>Big Data Analytics with PySpark</h3>
+                    <p>
+                        Big data analytics project focused on distributed processing,
+                        Spark DataFrames, data transformation and business insights.
+                    </p>
+                    <p class="tech">PySpark • Python • Big Data • Analytics</p>
+                    <a href="https://github.com/alivega93" target="_blank">View Project</a>
+                </article>
 
-<div class="project-card">
-<h3>Sales Forecasting & Commercial Analytics</h3>
-<p>Sales analysis, forecasting models and business intelligence dashboards.</p>
-</div>
+                <article class="project-card">
+                    <h3>Cloud Analytics Housing Data Lake</h3>
+                    <p>
+                        Cloud analytics project focused on data lake architecture, cloud
+                        storage, data processing and analytical workflow design.
+                    </p>
+                    <p class="tech">AWS • Python • Data Lake • Cloud Analytics</p>
+                    <a href="https://github.com/alivega93" target="_blank">View Project</a>
+                </article>
 
-</section>
+                <article class="project-card">
+                    <h3>Sales Forecasting & Commercial Analytics</h3>
+                    <p>
+                        Commercial analytics project focused on sales trends, forecasting,
+                        visual storytelling and business intelligence dashboards.
+                    </p>
+                    <p class="tech">Python • Machine Learning • BI • Data Visualization</p>
+                    <a href="https://github.com/alivega93" target="_blank">View Project</a>
+                </article>
 
-<section class="contact">
+            </div>
+        </section>
 
-<h2>Contact</h2>
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Let’s connect and build data-driven solutions.</p>
 
-<p>Email: ali.vega93@hotmail.com</p>
+            <div class="contact-links">
+                <a href="mailto:ali.vega93@hotmail.com">ali.vega93@hotmail.com</a>
+                <a href="https://github.com/alivega93" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
 
-<p>GitHub: github.com/alivega93</p>
+    </main>
 
-</section>
+    <footer>
+        <p>© <span id="year"></span> Ali Vega. Data Analyst Portfolio.</p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

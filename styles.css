@@ -4,31 +4,44 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial,sans-serif;
     background:#081126;
     color:white;
+    line-height:1.6;
 }
 
 /* HERO */
 
 .hero{
-    min-height:65vh;
+    min-height:90vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:60px 20px 40px;
+
+    padding:60px 25px;
 }
 
 .hero-content{
-    max-width:900px;
-    width:100%;
+    max-width:950px;
+}
+
+.tag{
+    color:#6ea3ff;
+    margin-bottom:20px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 .hero h1{
-    color:#6ea3ff;
     font-size:4rem;
+    color:#6ea3ff;
     margin-bottom:20px;
 }
 
@@ -38,80 +51,208 @@ body{
 }
 
 .hero p{
+    color:#d4d4d4;
     font-size:1.15rem;
-    color:#c7c7c7;
-    max-width:700px;
+
+    max-width:750px;
+
     margin:auto;
-    line-height:1.8;
+
+    line-height:1.9;
 }
 
-/* BUTTON */
+.hero-buttons{
+    margin-top:40px;
+}
+
+/* BUTTONS */
 
 .btn{
     display:inline-block;
-    margin-top:35px;
+
     text-decoration:none;
-    background:#356dff;
-    color:white;
-    padding:18px 42px;
+
+    padding:16px 36px;
+
     border-radius:14px;
+
+    margin:10px;
+
     transition:.3s;
 }
 
-.btn:hover{
+.primary{
+    background:#356dff;
+    color:white;
+}
+
+.primary:hover{
     background:#2458e8;
+}
+
+.secondary{
+    border:2px solid #356dff;
+    color:#356dff;
+}
+
+.secondary:hover{
+    background:#356dff;
+    color:white;
+}
+
+/* SECTIONS */
+
+.section{
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:90px 25px;
+}
+
+.section h2{
+    font-size:2.8rem;
+
+    margin-bottom:35px;
+
+    color:#6ea3ff;
 }
 
 /* ABOUT */
 
-.about{
-    max-width:1000px;
-    margin:auto;
-    padding:60px 25px 80px;
-}
-
-.about h2{
-    font-size:3rem;
-    margin-bottom:30px;
-    color:#ffffff;
-}
-
 .about p{
-    font-size:1.2rem;
-    line-height:2;
     color:#d4d4d4;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    margin-bottom:20px;
 }
 
-/* Projects */
+/* SKILLS */
 
-.projects,
-.contact{
-max-width:1000px;
-margin:auto;
-padding:80px 25px;
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
 }
 
-.projects h2,
-.contact h2{
-font-size:2.5rem;
-margin-bottom:40px;
+.skills-grid span{
+
+    background:#101a35;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    border:1px solid #22345e;
+}
+
+/* PROJECTS */
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
 }
 
 .project-card{
-background:#101a35;
-padding:30px;
-border-radius:18px;
-margin-bottom:25px;
+
+    background:#101a35;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #1f2f59;
+
+    transition:.3s;
+}
+
+.project-card:hover{
+
+    transform:translateY(-6px);
 }
 
 .project-card h3{
-color:#6ea3ff;
-margin-bottom:15px;
+
+    color:#6ea3ff;
+
+    margin-bottom:18px;
 }
 
 .project-card p{
-line-height:1.8;
-color:#d3d3d3;
+
+    color:#d4d4d4;
+
+    margin-bottom:15px;
+}
+
+.tech{
+
+    font-size:.95rem;
+
+    color:#8eaaff;
+}
+
+.project-card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    color:#6ea3ff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+/* CONTACT */
+
+.contact p{
+
+    color:#d4d4d4;
+
+    margin-bottom:20px;
+}
+
+.contact-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+}
+
+.contact-links a{
+
+    color:#6ea3ff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    color:#9fa8c6;
 }
 
 /* MOBILE */
@@ -119,40 +260,49 @@ color:#d3d3d3;
 @media (max-width:768px){
 
 .hero{
+
     min-height:85vh;
-    padding:70px 25px 40px;
+
+    padding:70px 20px;
 }
 
 .hero h1{
-    font-size:4rem;
+
+    font-size:3rem;
 }
 
 .hero h2{
-    font-size:1.9rem;
+
+    font-size:1.5rem;
+
     line-height:1.4;
 }
 
 .hero p{
-    font-size:1.25rem;
-    line-height:1.9;
+
+    font-size:1rem;
+}
+
+.section{
+
+    padding:70px 20px;
+}
+
+.section h2{
+
+    font-size:2.2rem;
 }
 
 .btn{
+
     width:100%;
-    max-width:330px;
-    font-size:1.2rem;
+
+    max-width:320px;
 }
 
-.about{
-    padding:70px 25px;
-}
+.contact-links{
 
-.about h2{
-    font-size:2.5rem;
-}
-
-.about p{
-    font-size:1.25rem;
+    flex-direction:column;
 }
 
 }
